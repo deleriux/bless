@@ -13,8 +13,10 @@ To use this you need to also add the pam_cap.so module to your pam stack.
 You will get output indicating the ambient capabilities you have been raised with. After which you can perform whatever privileged action you want to apply.
 
 IE in python:
+```
 $ python
- from socket import *
- s = socket(AF_INET, SOCK_STREAM)
- s.bind(("0.0.0.0", 400))
- s.listen(5)
+>>> from socket import *
+>>> s = socket(AF_INET, SOCK_STREAM)
+>>> s.bind(("0.0.0.0", 400))
+>>> s.listen(5)
+```
