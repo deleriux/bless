@@ -14,10 +14,7 @@ You will get output indicating the ambient capabilities you have been raised wit
 
 IE in python:
 $ python
-Python 2.7.5 (default, Nov 16 2020, 22:23:17) 
-[GCC 4.8.5 20150623 (Red Hat 4.8.5-44)] on linux2
-Type "help", "copyright", "credits" or "license" for more information.
-> > > from socket import *
-> > > s = socket(AF_INET, SOCK_STREAM)
-> > > s.bind(("0.0.0.0", 400))
-> > > s.listen(5)
+ from socket import *
+ s = socket(AF_INET, SOCK_STREAM)
+ s.bind(("0.0.0.0", 400))
+ s.listen(5)
