@@ -22,3 +22,7 @@ $ python
 ```
 # curse
 The inverse of bless. Will never allow a capability, even if you raise yourself to root via sudo or some other privilege raising event.
+
+# Purpose
+I wrote this program for my personal projects, often which are bound on low ports but I didn't want to be running a compiler as root.
+It uses the ambient capabilities feature on Linux kernels to work.
