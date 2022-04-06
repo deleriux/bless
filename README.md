@@ -12,7 +12,7 @@ To use this you need to also add the pam_cap.so module to your pam stack.
 
 You will get output indicating the ambient capabilities you have been raised with. After which you can perform whatever privileged action you want to apply.
 
-IE in python:
+IE in python (needs cap_net_bind):
 ```
 $ python
 >>> from socket import *
@@ -20,3 +20,5 @@ $ python
 >>> s.bind(("0.0.0.0", 400))
 >>> s.listen(5)
 ```
+# curse
+The inverse of bless. Will never allow a capability, even if you raise yourself to root via sudo or some other privilege raising event.
